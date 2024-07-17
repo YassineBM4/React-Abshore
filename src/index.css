@@ -1,13 +1,172 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#main {
+  width: 100%;
+  height: 726px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./images/homee.png');
+  position: relative;
+  z-index: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#main::before {
+  position: absolute;
+  content: "";
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.6) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#61b50808', endColorstr='#99000000', GradientType=1);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.bank-heading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-heading h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.header-heading h1 {
+  font-size: 5rem;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+.header-heading h1 span {
+  color: #0D7CC3;
+}
+
+.header-heading .details {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.header-btns {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 40%;
+}
+
+.header-btn {
+  width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  background-color: #E68F36;
+  box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.header-btn:hover {
+  background-color: transparent;
+  transition: all ease 0.5s;
+  color: #ffffff;
+  border: 2px solid #E68F36;
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 10px;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  border: transparent;
+  background: #E68F36;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.Card {}
+
+.Card:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.162) 0px 5px 5px;
+}
+
+.card-custom {
+  width: 600px;
+}
+
+@media (max-width: 600px) {
+  .card-custom {
+    width: 90%;
+  }
+}
+
+.error-border {
+  border: 1px solid red !important;
+}
+
+.blue-border .form-check-input {
+  border-color: blue !important;
+}
+
+.card-custom.blurred {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.card-custom .form-check {
+  filter: none;
+  pointer-events: auto;
+}
+
+.input-wrapper {
+  background-color: white;
+  width: 50%;
+  border-radius: 10px;
+  height: 2.5rem;
+  padding: 0 15px;
+  box-shadow: 0px 0px 8px #ddd;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-left: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#search-icon {
+  color: #0D7CC3;
+}
+
+@media (max-width: 768px) {
+  .video-cam {
+    width: 100%;
+  }
 }
