@@ -16,11 +16,11 @@ function OffcanvasExample() {
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav className="justify-content-center flex-grow-1 me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
-                        <Nav.Link as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/HowToDeposit">How To Deposit</Nav.Link>
-                        <Nav.Link as={Link} to="/DepositCheck">Deposit Check</Nav.Link>
-                        <Nav.Link as={Link} to="/AboutUs">About Us</Nav.Link>
-                        <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
+                        <Nav.Link as={Link} to="/" className=' link-75'>Home</Nav.Link>
+                        <Nav.Link as={Link} to="/HowToDeposit" className=' link-75'>How To Deposit</Nav.Link>
+                        <Nav.Link as={Link} to="/DepositCheck" className=' link-75'>Deposit Check</Nav.Link>
+                        <Nav.Link as={Link} to="/AboutUs" className=' link-75'>About Us</Nav.Link>
+                        <Nav.Link as={Link} to="/Contact" className=' link-75'>Contact</Nav.Link>
                     </Nav>
                     <div className="d-flex" style={{justifyContent:'center'}}>
                         <Button as={Link} to="/SignIn" className="me-2" style={{ background: '#E68F36', border: '#E68F36', width: '100px' }}>Sign In</Button>

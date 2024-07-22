@@ -19,11 +19,5 @@ export const BankList = [
         image: BIAT,
         name: 'BIAT',
         rib: '0450 1001 0551 7328'
-    },
-
-    {
-        image: BIAT,
-        name: 'BIAT',
-        rib: '0450 1001 0551 7328'
     }
 ]

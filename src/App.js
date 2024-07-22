@@ -12,6 +12,7 @@ import AddBankCard from './pages/AddBankCard';
 import Modal from './Components/Modal';
 import SelectBank from './pages/SelectBank';
 import TakePhoto from './pages/TakePhoto';
+import OCR from './pages/OCR';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/Modal" element={<Modal/>} />
           <Route path="/SelectBank" element={<SelectBank/>} />
           <Route path="/TakePhoto" element={<TakePhoto/>} />
+          <Route path="/OCR" element={<OCR/>} />
         </Routes>
       </BrowserRouter>
     </div>
